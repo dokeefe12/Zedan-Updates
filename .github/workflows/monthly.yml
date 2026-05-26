@@ -22,7 +22,7 @@ jobs:
         run: pip install requests
 
       - name: Run horse update script
-        run: python monthly_horse_update.py
+        run: ls -la && python ./monthly_horse_update.py
         env:
           RACING_API_USERNAME: ${{ secrets.RACING_API_USERNAME }}
           RACING_API_PASSWORD: ${{ secrets.RACING_API_PASSWORD }}
